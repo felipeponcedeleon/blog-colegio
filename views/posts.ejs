@@ -1,0 +1,24 @@
+<!-- posts.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Posts</title>
+</head>
+<body>
+    <h1>Listado de Posts</h1>
+    <% if (posts.length > 0) { %>
+        <ul>
+            <% posts.forEach(post => { %>
+                <li>Título: <%= post.title %><br>
+                    Post: <%= post.post %>
+                </li>
+            <% }); %>
+        </ul>
+    <% } else { %>
+        <p>No hay posts disponibles.</p>
+    <% } %>
+</body>
+</html>

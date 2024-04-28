@@ -1,0 +1,20 @@
+<!-- new_post.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Post</title>
+</head>
+<body>
+    <h1>Nuevo Post</h1>
+    <form action="/post" method="POST">
+        <label for="title">Título:</label><br>
+        <input type="text" id="title" name="title"><br>
+        <label for="content">Contenido:</label><br>
+        <textarea id="post" name="post"></textarea><br>
+        <button type="submit">Crear Post</button>
+    </form>
+</body>
+</html>
